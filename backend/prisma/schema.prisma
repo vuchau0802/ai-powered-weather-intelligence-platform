@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model WeatherSearch {
+  id          Int      @id @default(autoincrement())
+  city        String
+  latitude    Float
+  longitude   Float
+  temperature Float
+  humidity    Int
+  description String
+  createdAt   DateTime @default(now())
+}
