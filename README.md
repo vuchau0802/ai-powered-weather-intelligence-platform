@@ -9,7 +9,6 @@ A full-stack weather intelligence and analytics platform that provides real-time
 This application allows users to search for weather information using:
 - City names
 - ZIP/Postal codes
-- GPS coordinates
 - Landmarks
 
 The platform retrieves real-time weather data from external APIs, stores user search history in a PostgreSQL database, and provides analytics, visualizations, and intelligent weather insights.
