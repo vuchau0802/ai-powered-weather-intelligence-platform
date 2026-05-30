@@ -1,3 +1,9 @@
+# Prerequisites
+# ------------------------------------------------------------
+# Node.js    >= 18.x   https://nodejs.org
+# npm        >= 9.x    (bundled with Node.js)
+# PostgreSQL database  (Neon recommended: https://neon.tech)
+
 # --- Runtime dependencies ---
 @prisma/client@5.22.0          
 axios@^1.7.9                   
@@ -35,3 +41,11 @@ autoprefixer@^10.4.20
 postcss@^8.4.49                
 tailwindcss@^3.4.15            
 typescript@^5.6.3              
+
+# APIs REQUIRED
+# Add these keys to backend/.env
+# OPENWEATHER_API_KEY   https://openweathermap.org/api
+# OPENCAGE_API_KEY      https://opencagedata.com
+# YOUTUBE_API_KEY       https://console.cloud.google.com
+# DATABASE_URL          PostgreSQL connection string (Neon recommended: https://neon.tech)
+ 
