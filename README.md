@@ -48,3 +48,9 @@ The platform retrieves real-time weather data from external APIs, stores user se
 - Forecast comparison visualizations
 
 ---
+
+## Error Handling
+
+- The app handles errors gracefully by showing clear messages to the user instead of failing silently. For example, if the user searches without entering a city, the app displays a “City required” message. If the user enters an invalid or unknown city, the backend returns a 404 response and the frontend shows “City not found” with guidance to check the spelling and try again.
+
+- The app also handles API failures. If the weather service is unavailable or the API key is rejected, the backend returns a clean error response, and the frontend displays “Weather request failed” so the user understands the problem and can try again later.
