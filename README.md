@@ -40,13 +40,6 @@ The platform retrieves real-time weather data from external APIs, stores user se
 - API integrations
 - Error handling middleware
 
-### Analytics Features
-- Weather trend analysis
-- Temperature and humidity charts
-- Air quality analytics
-- Historical search tracking
-- Forecast comparison visualizations
-
 ---
 
 ## Error Handling
