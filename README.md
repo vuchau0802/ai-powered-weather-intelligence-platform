@@ -41,6 +41,49 @@ The platform retrieves real-time weather data from external APIs, stores user se
 
 ---
 
+## Steps to run
+
+## Step 1 — Clone the repo
+ 
+```bash
+git clone https://github.com/vuchau0802/ai-powered-weather-intelligence-platform.git
+cd ai-powered-weather-intelligence-platform
+```
+
+ ## Step 2 — Set up the Backend
+ 
+```bash
+cd backend
+notepad .env
+
+# Open backend/.env and replace the placeholders
+PORT=5000
+DATABASE_URL=postgresql://USER:PASSWORD@HOST/DBNAME?sslmode=require
+OPENWEATHER_API_KEY=your_key_here
+OPENCAGE_API_KEY=your_key_here
+YOUTUBE_API_KEY=your_key_here
+FRONTEND_URL=http://localhost:3000
+ENABLE_GEOCODING=true
+ENABLE_AIR_QUALITY=true
+ENABLE_YOUTUBE=true
+
+# Install dependencies
+npm install
+
+# Generate the Prisma
+npm run db:generate
+
+# Create the database table
+npm run db:ensure
+
+# Start the backend dev server
+npm run dev
+# Backend is now running at http://localhost:5000
+```
+ 
+
+---
+
 ## Error Handling
 
 - The app handles errors gracefully by showing clear messages to the user instead of failing silently. For example, if the user searches without entering a city, the app displays a “City required” message. If the user enters an invalid or unknown city, the backend returns a 404 response and the frontend shows “City not found” with guidance to check the spelling and try again.
