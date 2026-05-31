@@ -1,43 +1,46 @@
 # AI-Powered Weather Intelligence Platform
 
-A full-stack weather intelligence that provides real-time weather forecasts, 5-day weather predictions, geolocation-based weather detection, weather analytics, CRUD functionality, and interactive visualizations using modern web technologies.
+A full-stack weather intelligence application that provides real-time weather data, a 5-day forecast, search history management, weather analytics, air quality insights, travel videos, and interactive visualizations using modern web technologies.
 
 ---
 
 ## Project Overview
 
-This application allows users to search for weather information using:
-- City names
-- ZIP/Postal codes
-- Landmarks
+This application allows users to search for weather information by entering a city, ZIP/postal code, or landmark. The platform retrieves live weather data from external APIs, stores weather search history in a PostgreSQL database, and presents useful insights through charts, forecast cards, maps, and recommendation panels.
 
-The platform retrieves real-time weather data from external APIs, stores user search history in a PostgreSQL database, and provides analytics, visualizations, and intelligent weather insights.
-
+The app is built with a Next.js frontend, an Express/TypeScript backend, Prisma ORM, and PostgreSQL.
 
 ---
 
 ## Features
 
 ### Frontend Features
+
 - Real-time weather search
-- Current location weather detection
 - 5-day weather forecast
-- Responsive design for desktop/tablet/mobile
+- Fahrenheit temperature display
 - Weather condition icons
-- Interactive analytics dashboard
-- Smart weather recommendations
-- Error handling and validation
-- Loading states and skeletons
-- Dark/light mode support
+- Interactive temperature trend chart
+- Interactive map view
+- Air quality display when enabled
+- Smart weather insight messages
+- Travel video recommendations
+- Search history table
+- Export weather history to CSV or JSON
+- Delete saved history records
 
 ### Backend Features
-- RESTful API architecture
-- CRUD operations for weather searches
-- PostgreSQL database persistence
-- Data validation using Zod
-- Export weather data to JSON/CSV
-- API integrations
-- Error handling middleware
+
+- RESTful API built with Express and TypeScript
+- Weather search endpoint
+- CRUD operations for weather search history
+- PostgreSQL database persistence with Prisma ORM
+- OpenWeather API integration
+- OpenCage geocoding integration
+- Air quality integration
+- YouTube travel video integration
+- Export weather history to CSV
+- Export weather history to JSON
 
 ---
 
