@@ -50,7 +50,7 @@ git clone https://github.com/vuchau0802/ai-powered-weather-intelligence-platform
 cd ai-powered-weather-intelligence-platform
 ```
 
- ## Step 2 — Set up the Backend
+## Step 2 — Set up the Backend
  
 ```bash
 cd backend
@@ -80,7 +80,20 @@ npm run db:ensure
 npm run dev
 # Backend is now running at http://localhost:5000
 ```
+
+## Step 3 — Set up the Frontend (new terminal)
  
+```bash
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the frontend dev server
+npm run dev
+
+# Frontend is now running at http://localhost:3000
+```
 
 ---
 
