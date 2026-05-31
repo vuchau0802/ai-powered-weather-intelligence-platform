@@ -1,4 +1,4 @@
-# AI-Powered Weather Intelligence Platform
+# AI Weather Intelligence Platform
 
 A full-stack weather intelligence application that provides real-time weather data, a 5-day forecast, search history management, weather analytics, air quality insights, travel videos, and interactive visualizations using modern web technologies.
 
